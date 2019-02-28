@@ -25,4 +25,5 @@ npm install
 - **go to the folder and run:**
 ```
 node server js
+open the browser and go to http://localhost:8080
 ```
