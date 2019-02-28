@@ -1,0 +1,131 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #000;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    margin-right: 30px;
+}
+
+.login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login {
+    border: solid 1px #9d9d9d;
+    padding: 15px;
+}
+
+.logout {
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.login span.user {
+    padding-right: 12px;
+}
+
+.login span.pass {
+    padding-right: 15px;
+}
+
+.login-button {
+    padding: 0;
+}
+
+.login-button,
+.identification-bar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.identification-bar {
+    padding-top: 15px;
+    font-size: 1.2em;
+    color: #999999;
+    margin-top: 80px;
+}
+
+.login-button button {
+    min-width: 150px;
+}
+
+.inline-content {
+    display: flex;
+    align-items: center;
+}
+
+.login-message {
+    justify-content: center;
+    font-size: 1.5em
+;
+}
+
+input.ng-dirty.ng-invalid,
+input.ng-touched.ng-invalid {
+   border: 1px solid #ff0000;
+}
+
+.course-header,
+.course-description {
+    color: #999999;
+    padding: 8px;
+    border: 1px solid #5e5e5e;
+    background-color: #fff;
+}
+
+.course-description {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    float: right;
+}
+
+.course-box {
+    margin-bottom: 10px;
+}
+
+.course-box:first-child {
+    margin-top: 20px;
+}
+
+.course-detail,
+.launch {
+    cursor: pointer;
+
+}
+
+/*custom-modal*/
+.custom-modal .modal-header span {
+    border: solid 2px;
+    border-radius: 30px;
+    padding: 2px 5px;
+}
+
+.modal-backdrop {
+    background: none;
+}
+
+.custom-modal {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-modal .modal-content {
+    box-shadow: none;
+    border-radius: 0px;
+    border: solid 1px #999;
+    min-height: 90vh;
+}
+/*end custom-modal*/

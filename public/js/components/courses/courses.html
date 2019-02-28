@@ -1,0 +1,19 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 identification-bar">
+    {{$ctrl.user.name}} {{$ctrl.user.lastname}} ({{$ctrl.user.username}}) <span class="logout" ng-click="$ctrl.logout()">Logout</span>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 course-box" ng-repeat="course in $ctrl.courses">
+        <div class="course-header">
+            <strong>{{course.code}}</strong> {{course.name}} <span class="pull-right course-detail" ng-click="course.open = !course.open">details</span>
+        </div>
+
+        <div class="course-description" ng-show="course.open">
+            <div>
+                {{course.description}}
+            </div>
+            <div>
+                <span class="pull-right launch" ng-click="$ctrl.courseContent(course)">launch</span>
+            </div>
+        </div>
+    </div>
+</div>
